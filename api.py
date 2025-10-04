@@ -16,7 +16,7 @@ os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 app = FastAPI(title="Gamma AI Watermark Remover API", version="2.0.0")
 
-FRONTEND_URL = os.getenv('FRONTEND_URL', 'http://localhost:3000')
+FRONTEND_URL = os.getenv('https://gamma-ai-watermark-remover.vercel.app', 'http://localhost:3000')
 
 app.add_middleware(
     CORSMiddleware,
